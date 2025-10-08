@@ -1,6 +1,4 @@
-# FinOps_Agentic_AI
-
-# Multi-Agent Finance System Deployment Guide
+# Multi-Agent Finance Operations System Deployment Guide
 
 ## 🏗️ Architecture Overview
 
