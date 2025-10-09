@@ -277,3 +277,62 @@ Your hierarchical multi-agent system is now deployed!
 2. Monitor agent performance
 3. Adjust supervisor routing logic as needed
 4. Add more specialist agents if required
+
+
+
+
+# Software Installation Instructions and Structure
+
+<img width="733" height="278" alt="image" src="https://github.com/user-attachments/assets/4fda9e39-7733-47eb-8831-fc65568d05dd" />
+
+Summary of Modular Structure:
+Benefits of this structure:
+
+Easy Debugging 🐛
+
+Problem with financial data? → Check services/financial_data.py
+Britive issues? → Check services/britive_client.py
+Agent not responding? → Check services/agentcore_client.py
+API errors? → Check routes/api.py
+
+
+Easy Updates 🔄
+
+Want to change styling? → Edit static/css/styles.css
+Need to add API endpoint? → Edit routes/api.py
+New agent logic? → Edit services/agentcore_client.py
+
+
+Testable ✅
+
+Each service can be unit tested independently
+Mock external dependencies easily
+
+
+Scalable 📈
+
+Add new agents by extending agentcore_client.py
+Add new data sources in financial_data.py
+Add new routes in routes/
+
+
+
+How to Set It Up:
+
+Run the setup script (creates all directories and files):
+
+bash   bash setup.sh
+
+Copy code from the 3 artifacts I created:
+
+Artifact 1: "Modular FinOps App Structure" → Copy to Python files
+Artifact 2: "Frontend Files" → Copy to HTML/CSS/JS files
+Artifact 3: "Setup Guide" → Reference for commands
+
+
+Install and run:
+
+bash   cd finops_app
+   pip install -r requirements.txt
+   python app.py
+
