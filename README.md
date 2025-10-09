@@ -316,7 +316,7 @@ New agent logic? → Edit services/agentcore_client.py
 
 
 ### How to Set It Up:
-
+'''
 1. Run the setup script (creates all directories and files):
 
 bash   
@@ -335,4 +335,4 @@ bash
    cd finops_app
    pip install -r requirements.txt
    python app.py
-
+'''
