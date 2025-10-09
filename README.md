@@ -285,54 +285,54 @@ Your hierarchical multi-agent system is now deployed!
 
 <img width="733" height="278" alt="image" src="https://github.com/user-attachments/assets/4fda9e39-7733-47eb-8831-fc65568d05dd" />
 
-Summary of Modular Structure:
-Benefits of this structure:
+## Summary of Modular Structure:
+### Benefits of this structure:
 
-Easy Debugging 🐛
+1. Easy Debugging 🐛
 
-Problem with financial data? → Check services/financial_data.py
-Britive issues? → Check services/britive_client.py
-Agent not responding? → Check services/agentcore_client.py
-API errors? → Check routes/api.py
+** Problem with financial data? → Check services/financial_data.py
+** Britive issues? → Check services/britive_client.py
+** Agent not responding? → Check services/agentcore_client.py
+** API errors? → Check routes/api.py
 
+2. Easy Updates 🔄
 
-Easy Updates 🔄
-
-Want to change styling? → Edit static/css/styles.css
-Need to add API endpoint? → Edit routes/api.py
+** Want to change styling? → Edit static/css/styles.css
+** Need to add API endpoint? → Edit routes/api.py
 New agent logic? → Edit services/agentcore_client.py
 
+3. Testable ✅
 
-Testable ✅
-
-Each service can be unit tested independently
-Mock external dependencies easily
-
-
-Scalable 📈
-
-Add new agents by extending agentcore_client.py
-Add new data sources in financial_data.py
-Add new routes in routes/
+** Each service can be unit tested independently
+** Mock external dependencies easily
 
 
+4. Scalable 📈
 
-How to Set It Up:
+** Add new agents by extending agentcore_client.py
+** Add new data sources in financial_data.py
+** Add new routes in routes/
 
-Run the setup script (creates all directories and files):
 
-bash   bash setup.sh
 
-Copy code from the 3 artifacts I created:
+### How to Set It Up:
+
+1. Run the setup script (creates all directories and files):
+
+bash   
+  bash setup.sh
+
+2. Copy code from the 3 artifacts I created:
 
 Artifact 1: "Modular FinOps App Structure" → Copy to Python files
 Artifact 2: "Frontend Files" → Copy to HTML/CSS/JS files
 Artifact 3: "Setup Guide" → Reference for commands
 
 
-Install and run:
+3. Install and run:
 
-bash   cd finops_app
+bash   
+   cd finops_app
    pip install -r requirements.txt
    python app.py
 
